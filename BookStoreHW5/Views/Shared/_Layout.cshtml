@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - Book Store</title>
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    @RenderSection("Styles", required: false)
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index">Book Store</a>
+
+            <div class="d-flex">
+                <a class="nav-link text-white" href="/Home/Index">Home</a>
+                <a class="nav-link text-white" href="/Home/About">About</a>
+                <a class="nav-link text-white" href="/Home/Contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4 flex-grow-1">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        Muhammad Nouman | BSEF24A001
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
